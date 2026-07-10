@@ -1,0 +1,109 @@
+@import './userTheme.css';
+
+/* ===== PAGE BACKGROUND ===== */
+/* (base rules come from userTheme.css) */
+
+/* Full-screen background wrapper */
+.feedback-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("https://www.google.com/imgres?q=pothole%20images%20i%20need%20url%20image&imgurl=https%3A%2F%2Ft4.ftcdn.net%2Fjpg%2F00%2F18%2F81%2F81%2F360_F_18818150_LW0PjRkjCsyxSVnzZavgkQFlYq77bBom.jpg&imgrefurl=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3D%2522pot%2Bhole%2522&docid=x1mkCvl-Po6loM&tbnid=-WXnckE2e3wlXM&vet=12ahUKEwiLrv3Mm92SAxXkXGwGHZZiEioQnPAOegQIHBAB..i&w=542&h=360&hcb=2&ved=2ahUKEwiLrv3Mm92SAxXkXGwGHZZiEioQnPAOegQIHBAB");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.6); /* dark overlay for readability */
+}
+
+/* ===== FEEDBACK CARD ===== */
+.feedback-container {
+  width: 420px;
+  margin: 80px auto;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+  color: #cbd5e1;
+}
+
+.feedback-container:hover {
+  transform: translateY(-5px);
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+}
+
+/* ===== TITLE ===== */
+.feedback-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* ===== INPUT & TEXTAREA ===== */
+.feedback-container input,
+.feedback-container textarea {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.feedback-container input::placeholder,
+.feedback-container textarea::placeholder {
+  color: #94a3b8;
+}
+
+.feedback-container input:focus,
+.feedback-container textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+}
+
+/* ===== BUTTON ===== */
+.feedback-container button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.feedback-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+
+/* ===== SUCCESS MESSAGE ===== */
+/* .message {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #e6f9f0;
+  color: #1b7f4c;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #b6f2d5;
+} */

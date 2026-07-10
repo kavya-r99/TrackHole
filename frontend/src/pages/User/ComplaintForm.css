@@ -1,0 +1,115 @@
+@import './userTheme.css';
+
+/* keep page layout but use shared theme background wrapper in markup (.user-theme-background) */
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.complaint-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+/* ===== RIGHT SECTION ===== */
+.right-section {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ===== FORM CARD ===== */
+.complaint-card {
+  padding: 35px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== TITLE ===== */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* ===== LABEL ===== */
+label {
+  font-weight: 600;
+  margin-top: 15px;
+  display: block;
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+/* ===== INPUT + TEXTAREA ===== */
+/* input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 12px;
+  border: 1px solid #dce3ea;
+  font-size: 14px;
+  background: #f9fbfd;
+  transition: all 0.25s ease;
+} */
+
+/* input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4e73df;
+  box-shadow: 0 0 0 3px rgba(78, 115, 223, 0.12);
+  background: white;
+} */
+
+textarea {
+  resize: none;
+  height: 90px;
+}
+
+/* ===== FILE INPUT ===== */
+input[type="file"] {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  padding: 10px;
+}
+
+/* ===== BUTTON ===== */
+/* button[type="submit"] {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  background: linear-gradient(135deg, #4e73df, #224abe);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.25s ease;
+} */
+
+/* button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(78, 115, 223, 0.28);
+} */
+
+/* ===== READONLY INPUT ===== */
+/* .readonly-input {
+  background-color: #eef2f7;
+  cursor: not-allowed;
+  font-weight: 500;
+} */

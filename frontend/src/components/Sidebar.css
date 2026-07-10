@@ -1,0 +1,83 @@
+/* @import "../index.css"; */
+
+
+
+/* SIDEBAR OVERLAY FOR MOBILE */
+/* .sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+} */
+
+/* ==========================================
+   RESPONSIVE DESIGN - MOBILE DEVICES
+   ========================================== */
+
+/* @media (max-width: 768px) {
+  .sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .admin-sidebar {
+    width: 260px;
+    height: 100vh;
+  }
+
+  .admin-sidebar.closed {
+    transform: translateX(-100%);
+  }
+
+  .admin-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-overlay {
+    display: block;
+  }
+
+  .sidebar-overlay.hidden {
+    display: none;
+  }
+
+  .admin-main-content {
+    margin-left: 0;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-sidebar {
+    width: 100%;
+  }
+
+  .sidebar-header h2 {
+    font-size: 20px;
+  }
+
+  .custom-nav-link {
+    padding: 12px 15px;
+  }
+
+  .custom-nav-link span {
+    font-size: 14px;
+  }
+
+  .sidebar-footer {
+    bottom: 10px;
+    left: 15px;
+    right: 15px;
+    width: calc(100% - 30px);
+  }
+
+  .admin-logout-btn {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+} */

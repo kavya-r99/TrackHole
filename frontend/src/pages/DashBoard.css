@@ -1,0 +1,212 @@
+.user-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* SIDEBAR */
+.user-sidebar {
+  width: 250px;
+  background: #1e1e2f;
+  color: white;
+  padding: 25px;
+  position: fixed;
+  height: 100%;
+}
+
+/* .sidebar-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00;
+} */
+
+/* NAVIGATION */
+.user-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.user-menu li {
+  margin-bottom: 18px;
+}
+
+.user-menu a,
+.logout-btn {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.user-menu a:hover {
+  background: #3a3a56;
+}
+
+.logout-btn {
+  width: 100%;
+  background: #d43f3f;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #ff4d4d;
+}
+
+/* CONTENT */
+.user-content {
+  margin-left: 260px;
+  padding: 40px;
+  width: 100%;
+}
+
+/* 2-COLUMN CARDS */
+/* .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+} */
+
+/* CARDS */
+.dash-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  position: relative;
+}
+
+.dash-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* BUTTON */
+.card-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #007bff;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  background: #0056b3;
+}
+
+/* ANIMATION */
+.animate {
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* General container */
+.dashboard-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff7043;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+
+.logout-btn {
+  background: #fff;
+  color: #ff7043;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #ffe0d5;
+}
+
+/* Subtitle */
+.dashboard-subtitle {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Sections */
+.dashboard-sections {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Cards */
+/* .card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #ff7043;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 15px;
+} */
+
+/* Buttons */
+/* .action-btn {
+  background: #ff7043;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.action-btn:hover {
+  background: #e85c2a;
+} */

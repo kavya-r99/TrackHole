@@ -1,0 +1,90 @@
+@import './userTheme.css';
+
+.track-container {
+  max-width: 700px;
+  margin: 60px auto;
+  font-family: 'Poppins', sans-serif;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  color: #cbd5e1;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #38bdf8;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.back-link:hover {
+  text-shadow: 0 0 0.5rem rgba(56, 189, 248, 0.4);
+}
+
+.track-box {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.track-box input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.track-box input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+}
+
+.track-box button {
+  padding: 14px 24px;
+  border: none;
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: white;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.track-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+
+.result-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: #ffffff;
+
+  & p {
+    color: #cbd5e1;
+    margin-bottom: 8px !important;
+  }
+
+  & strong {
+    color: #38bdf8;
+  }
+}
+
+.track-result { margin-top: 20px; text-align: left; }
+
+.error { color: #f87171; font-weight: 600; }
+

@@ -1,0 +1,45 @@
+/* Admin Dashboard styles */
+
+.section-title {
+  color: var(--color-primary-l) !important;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  padding-left: 36px;
+  margin-bottom: 16px !important;
+}
+
+.card-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  background: rgba(56, 189, 248, 0.08);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  transition: all 0.3s ease;
+}
+
+.custom-card:hover .card-icon-wrapper {
+  background: #38bdf8;
+  color: #0f172a;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+  transform: scale(1.1);
+}
+
+.logout-card .card-icon-wrapper {
+  background: rgba(239, 68, 68, 0.08);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+.logout-card:hover .card-icon-wrapper {
+  background: #ef4444;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
+}

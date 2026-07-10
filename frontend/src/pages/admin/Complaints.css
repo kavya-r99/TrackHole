@@ -1,0 +1,192 @@
+.complaints-container {
+  padding: 30px;
+}
+
+.d-f {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.d-f button {
+  width: fit-content;
+  background-color: rgb(121, 22, 22);
+  z-index: 2;
+}
+
+.d-f h2 {
+  position: absolute;
+  text-align: center;
+  height: fit-content;
+  background-color: rgb(228, 146, 40);
+  width: 100%;
+  z-index: 1;
+}
+
+.complaints-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.complaints-table th,
+.complaints-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.complaints-table th {
+  background: #1e1e2f;
+  color: white;
+}
+
+/* IMAGE */
+.complaint-img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+/* .complaint-img:hover {
+  transform: scale(1.8);
+} */
+
+/* STATUS DROPDOWN */
+.status-select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Pending */
+.status-select.Pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* In Progress (IMPORTANT FIX) */
+.status-select.In.Progress {
+  background: #cce5ff;
+  color: #004085;
+}
+
+/* Resolved */
+.status-select.Resolved {
+  background: #d4edda;
+  color: #155724;
+}
+.complaints-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Table styling */
+.complaints-table {
+  width: 100%;
+  min-width: 1100px; /* prevents layout breaking */
+  border-collapse: collapse;
+}
+
+.complaints-table th,
+.complaints-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  word-break: break-word;
+  max-width: 200px;
+}
+
+/* Image control */
+.complaint-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Status dropdown */
+.status-select {
+  padding: 5px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .complaints-table {
+    min-width: 900px;
+  }
+
+  .complaint-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.scroll-top-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #0f172a;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  animation: leftRight 1.4s ease-in-out infinite alternate;
+}
+
+.scroll-top-btn:hover {
+  background: #1e293b;
+  animation-play-state: paused;
+}
+
+@keyframes leftRight {
+  from {
+    transform: translateX(-18px);
+  }
+  to {
+    transform: translateX(18px);
+  }
+}
+
+.x-scroll-controls {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.x-scroll-controls button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #0f172a;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.x-scroll-controls button:hover {
+  background: #1e293b;
+}
