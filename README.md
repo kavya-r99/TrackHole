@@ -1,38 +1,109 @@
-# Food Delivery App (Scaffold)
-Stack: Node (Express) + MySQL (XAMPP) + React
+# 🚧 TrackHole – Geo-Tagging Pothole Detection System
 
-This scaffold gives you:
-- Backend: Express server with auth (JWT), user and product APIs, file-upload-ready endpoints.
-- Frontend: React app skeleton with routes (Home, About, Contact, Register, Login, Forgot Password, Admin/Guest/Staff dashboards).
-- Database: `db.sql` with schema for users, restaurants, products, orders.
-- Instructions to run locally using XAMPP (MySQL), Node and npm/yarn.
+TrackHole is a web-based application that enables users to report potholes by uploading images and location details. The system helps local authorities monitor, verify, and manage road damage efficiently through an admin dashboard.
 
-## Quick start
+## 📌 Features
 
-### 1) MySQL (XAMPP)
-1. Start XAMPP and MySQL.
-2. Open phpMyAdmin (http://localhost/phpmyadmin).
-3. Create a database named `food_delivery`.
-4. Import `db.sql` found in this scaffold.
+### 👤 User
+- Register and Login
+- Report potholes with images
+- View complaint status
+- Track reported potholes
+- Submit feedback
 
-### 2) Backend
+### 🛠️ Admin
+- Secure Admin Login
+- View all reported potholes
+- Verify and manage complaints
+- Update complaint status
+- Dashboard with analytics
+
+## 💻 Tech Stack
+
+**Frontend**
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+
+**Backend**
+- Node.js
+- Express.js
+
+**Database**
+- MySQL (XAMPP)
+
+**Other Tools**
+- Git
+- GitHub
+- Visual Studio Code
+
+## 📂 Project Structure
+
+```
+TrackHole/
+├── frontend/
+├── backend/
+├── pothole.sql
+├── README.md
+└── .gitignore
+```
+
+## 🚀 Installation
+
+1. Clone the repository
+```
+git clone https://github.com/kavya-r99/TrackHole.git
+```
+
+2. Open the project folder.
+
+3. Import the SQL database into MySQL using XAMPP.
+
+4. Install dependencies.
+
+Backend:
 ```
 cd backend
-cp .env.example .env
-# edit .env with your MySQL credentials (DB_HOST, DB_USER, DB_PASS, DB_NAME)
 npm install
-npm run dev
+npm start
 ```
-Server runs at `http://localhost:5000` by default.
 
-### 3) Frontend
+Frontend:
 ```
 cd frontend
 npm install
 npm start
 ```
-Frontend runs at `http://localhost:3000`.
 
-## Notes
-- This scaffold is minimal and intended to jumpstart development. Replace placeholders, add validations, secure secrets, and harden before production.
-- See inline comments in backend and frontend files for details.
+5. Open your browser and visit:
+```
+http://localhost:3000
+```
+
+## 📸 Screenshots
+
+Add screenshots of:
+- Home Page
+- User Login
+- Complaint Form
+- Admin Dashboard
+- Report Status
+
+## 🎯 Future Enhancements
+
+- Google Maps integration
+- Live GPS tracking
+- Email notifications
+- Mobile application
+- AI-based pothole detection
+
+## 👩‍💻 Developed By
+
+**Kavya Shetty**
+
+BCA Graduate
+
+## 📄 License
+
+This project is developed for academic and educational purposes.
